@@ -1,0 +1,40 @@
+# Chapter3problem
+import java.util.Scanner;
+
+public class RandomCard {
+	
+	public static void main(String[] args) {
+		int numberRandom=(int)(Math.random()*13+1);
+		int flowerColorRandom=(int)(Math.random()*4+1);
+		
+		if(numberRandom==1) {
+			System.out.print("The card you picked is Ace of ");
+		}
+		else if(numberRandom<=10) {
+			System.out.print("The card you picked is "+numberRandom+" of ");
+		}
+		else if(numberRandom==11) {
+			System.out.print("The card you picked is Jack of ");
+		}
+		else if(numberRandom==12) {
+			System.out.print("The card you picked is Queen of ");
+		}
+		else {
+			System.out.print("The card you picked is King of ");
+		}
+		
+		if(flowerColorRandom==1) {
+			System.out.println("Clubs");
+		}
+		else if(flowerColorRandom==2){
+			System.out.println("Diamonds");
+		}
+		else if(flowerColorRandom==3){
+			System.out.println("Hearts ");
+		}
+		else {
+			System.out.println("Spades");
+		}
+	}
+	
+}
