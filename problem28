@@ -1,0 +1,31 @@
+# Chapter3problem
+import java.util.Scanner;
+
+public class R1InsideR2 {
+	
+	public static void main(String[] args) {
+		System.out.println("input (x,y) and width、length:");
+		Scanner input=new Scanner(System.in);
+		double x1=input.nextDouble();
+		double y1=input.nextDouble();
+		double width1=input.nextDouble();
+		double length1=input.nextDouble();
+		System.out.println("input (x,y) and width、length:");
+		double x2=input.nextDouble();
+		double y2=input.nextDouble();
+		double width2=input.nextDouble();
+		double length2=input.nextDouble();
+		
+		if(Math.abs(x1-x2)<(width1+width2)/2&&Math.abs(y1-y2)<(length1+length2)/2) {
+			if(width1>width2&&length1>length2) {
+				System.out.println("r2 is inside rl");
+			}
+			else
+				System.out.println("r2 overlaps rl");
+		}
+		else {
+			System.out.println("r2 does not overlap rl");
+		}
+	}
+	
+}
